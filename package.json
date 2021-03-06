@@ -1,0 +1,24 @@
+{
+  "name": "chillwatch",
+  "version": "1.0.0",
+  "description": "Application JustWatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roddoark/chillwatch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roddoark/chillwatch/issues"
+  },
+  "homepage": "https://github.com/Roddoark/chillwatch#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "redux": "^4.0.5"
+  }
+}
