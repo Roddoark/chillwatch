@@ -1,10 +1,11 @@
 {
   "name": "chillwatch",
   "version": "1.0.0",
-  "description": "Application JustWatch",
-  "main": "index.js",
+  "description": "Application chillWatch",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,14 @@
   },
   "homepage": "https://github.com/Roddoark/chillwatch#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "redux": "^4.0.5"
-  }
+  },
+  "devDependencies": {
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  },
+  "keywords": []
 }
