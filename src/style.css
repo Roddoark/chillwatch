@@ -6,7 +6,6 @@
 }
 
 .hello {
-  color: red;
+  color: orange;
   font-family: 'MyFont';
-  background: url('./icon.png');
 }
