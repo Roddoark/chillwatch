@@ -1,11 +1,10 @@
 const path = require('path');
-const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
+    index: './index.js',
   },
   devServer: {
     contentBase: './dist',
@@ -24,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.scss$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
@@ -34,21 +33,6 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.(csv|tsv)$/i,
-        use: ['csv-loader'],
-      },
-      {
-        test: /\.xml$/i,
-        use: ['xml-loader'],
-      },
-      {
-        test: /\.json5$/i,
-        type: 'json',
-        parser: {
-          parse: json5.parse,
-        },
       },
     ],
   },
