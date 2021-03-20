@@ -2,6 +2,8 @@ import React from 'react';
 import "./header.scss";
 import img from '../../../assets/images/logo.png'
 
+import Navigation from '../Navigation/navigation'
+
 const Header = () => {
   return (
     <header>
@@ -10,6 +12,7 @@ const Header = () => {
           <img src={img} alt="ChillWatch" />
         </a>
       </div>
+      <Navigation />
     </header>
   )
 }

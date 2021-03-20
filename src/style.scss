@@ -37,3 +37,21 @@ body {
 .hellow {
   color: orange;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: $linkColor;
+
+  &:hover {
+    color: $linkHoverColor;
+  }
+}
