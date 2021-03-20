@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
- 
+
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, './src/index.js'),
@@ -12,9 +12,10 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.scss$/i,
-        use: ['style-loader', 'css-loader'],
-      },
+        test: /\.scss?$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
     ],
   },
   resolve: {

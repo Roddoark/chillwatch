@@ -1,3 +1,11 @@
+@import 'vars.scss';
+
+
+body {
+  color: $textColor;
+  background-color: $backgroundColor;
+}
+
 .hellow {
-  color: green;
+  color: orange;
 }
