@@ -19,7 +19,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: $textColor;
-  background-color: orange;
+  background-color: $backgroundColor;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow: hidden;

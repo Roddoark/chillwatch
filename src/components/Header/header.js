@@ -3,6 +3,7 @@ import "./header.scss";
 import img from '../../../assets/images/logo.png'
 
 import Navigation from '../Navigation/navigation'
+import Searchbar from '../Searchbar/searchbar'
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         </a>
       </div>
       <Navigation />
+      <Searchbar />
     </header>
   )
 }
