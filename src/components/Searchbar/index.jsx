@@ -1,5 +1,5 @@
 import React from 'react'
-import "./searchbar.scss";
+import "./_searchbar.scss";
 
 const Searchbar = () => {
   return (
@@ -9,9 +9,9 @@ const Searchbar = () => {
         aria-label="search text"
         className="searchTerm"
         placeholder="Rechercher un film ou une série"
-        autocomplete="off"
-        autocorrect="off"
-        spellcheck="false"
+        autoComplete="off"
+        autoCorrect="off"
+        spellCheck="false"
       />
       <button type="submit" className="searchButton">
         >
