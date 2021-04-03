@@ -14,7 +14,7 @@ const Header = () => {
         </a>
       </div>
       <Navigation />
-      <Searchbar />
+      <Searchbar placeholder="Rechercher un film ou une série"/>
     </header>
   )
 }

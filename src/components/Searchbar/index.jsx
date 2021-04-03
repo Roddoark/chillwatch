@@ -1,17 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+
 import "./searchbar.scss";
 
-const Searchbar = () => {
+const Searchbar = (props) => {
+  const { placeholder } = props;
   return (
     <div className="search">
       <input
         type="search"
         aria-label="search text"
         className="searchTerm"
-        placeholder="Rechercher un film ou une série"
-        autocomplete="off"
-        autocorrect="off"
-        spellcheck="false"
+        placeholder={placeholder}
+        autoComplete="off"
+        autoCorrect="off"
+        spellCheck="false"
       />
       <button type="submit" className="searchButton">
         >
@@ -19,5 +22,9 @@ const Searchbar = () => {
     </div>
   )
 }
+
+Searchbar.propTypes = {
+  placeholder: PropTypes.string
+};
 
 export default Searchbar;
