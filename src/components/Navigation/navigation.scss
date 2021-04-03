@@ -1,0 +1,13 @@
+.nav {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+
+    li {
+      margin: 0 10px;
+    display: flex;
+    }
+  }
+}

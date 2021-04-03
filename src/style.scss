@@ -1,3 +1,57 @@
+@import 'vars.scss';
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Lato,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: $textColor;
+  background-color: $backgroundColor;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  touch-action: manipulation;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+  word-wrap: break-word;
+  overscroll-behavior-y: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hellow {
-  color: green;
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: $linkColor;
+
+  &:hover {
+    color: $linkHoverColor;
+  }
 }

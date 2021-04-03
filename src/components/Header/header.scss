@@ -1,0 +1,17 @@
+header {
+  background-color: rgba(6, 13, 23, 0.8);
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  img {
+    width: 131px;
+  }
+}
