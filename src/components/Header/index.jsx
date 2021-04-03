@@ -2,8 +2,8 @@ import React from 'react';
 import "./header.scss";
 import img from '../../../assets/images/logo.png'
 
-import Navigation from '../Navigation/navigation'
-import Searchbar from '../Searchbar/searchbar'
+import Navigation from '../Navigation'
+import Searchbar from '../Searchbar'
 
 const Header = () => {
   return (
