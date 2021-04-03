@@ -1,5 +1,5 @@
 import React from 'react';
-import "./header.scss";
+import "./_header.scss";
 import img from '../../../assets/images/logo.png'
 
 import Navigation from '../Navigation'
