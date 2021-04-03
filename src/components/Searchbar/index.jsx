@@ -17,7 +17,7 @@ const Searchbar = (props) => {
         spellCheck="false"
       />
       <button type="submit" className="searchButton">
-        >
+        &#62;
     </button>
     </div>
   )
