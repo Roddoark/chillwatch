@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.scss"
 import H1 from "./components/H1"
 import Header from "./components/Header"
-import MoviesList from "./components/MoviesList"
+import HomePage from './containers/HomePage';
 
 
 const App = ({ title }) =>
@@ -12,7 +12,7 @@ const App = ({ title }) =>
       <H1 title="titre ok ok ok ok ok"/>
       {title}
     </div>
-    <MoviesList />
+    <HomePage />
   </>;
  
 export default App;

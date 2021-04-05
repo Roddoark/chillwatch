@@ -10,14 +10,14 @@ const Moviecard = (props) => {
       <img
         className="horizontal-title-list__item"
         src={src}
-        alt="movie"
+        alt={alt}
       />
   )
 }
 
 Moviecard.propTypes = {
   src: PropTypes.string.isRequired,
-  alt: PropTypes.string,
+  alt: PropTypes.string.isRequired
 };
 
 export default Moviecard;
