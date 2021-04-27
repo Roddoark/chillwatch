@@ -6,7 +6,7 @@ import Moviecard from "../MovieCard"
 
 const MoviesList = (props) => {
   const { items } = props;
-  console.log(props);
+
   return (
       <div className="list__items">
         {items.map((item) => {
