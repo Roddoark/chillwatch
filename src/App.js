@@ -10,7 +10,7 @@ const App = ({ title }) =>
     <Header />
     <div className="hellow">
       <H1 title="titre ok ok ok ok ok"/>
-      {title}
+      {/*{title}*/}
     </div>
     <HomePage />
   </>;
