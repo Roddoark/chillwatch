@@ -1,3 +1,5 @@
+// https://storybook.js.org/docs/react/configure/webpack
+
 const path = require('path');
 
 module.exports = {
