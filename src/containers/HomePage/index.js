@@ -3,7 +3,7 @@ import axios from 'axios';
 import "regenerator-runtime/runtime.js";
 import "./_homepage.scss"
 
-import MovieCard from "../../components/MovieCard"
+import MovieCard from "components/MovieCard"
 
 const HomePage = () => {
 
