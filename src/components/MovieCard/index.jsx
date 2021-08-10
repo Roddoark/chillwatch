@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-import "./_moviecard.scss";
+import "./movieCard.scss";
 
 const Moviecard = (props) => {
   const { src, alt } = props;
@@ -19,5 +19,10 @@ Moviecard.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired
 };
+
+Moviecard.defaultProps = {
+  src: 'https://images.justwatch.com/poster/100348362/s718/saison-1.webp',
+};
+
 
 export default Moviecard;

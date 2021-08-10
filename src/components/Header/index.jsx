@@ -1,6 +1,6 @@
 import React from 'react';
 import "./_header.scss";
-import img from '../../../assets/images/logo.png'
+import img from 'images/logo.png'
 
 import Navigation from '../Navigation'
 import Searchbar from '../Searchbar'
