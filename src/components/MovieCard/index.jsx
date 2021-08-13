@@ -21,7 +21,7 @@ Moviecard.propTypes = {
 };
 
 Moviecard.defaultProps = {
-  src: 'https://images.justwatch.com/poster/100348362/s718/saison-1.webp',
+  src: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oAb9gwwziYULI7FcM23A9tPfcUz.jpg',
 };
 
 
