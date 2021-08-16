@@ -6,8 +6,12 @@ import "./chipButton.scss";
 const ChipButton = (props) => {
   const { label } = props;
 
+  function handleclick() {
+    console.log('handleclick chip button')
+  }
+
   return (
-    <button>{label}</button>
+    <button onClick={handleclick}>{label}</button>
   )
 }
 

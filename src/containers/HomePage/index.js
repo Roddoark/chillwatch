@@ -23,7 +23,7 @@ const HomePage = () => {
       {data.results.map(item => {
         let path_img = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${item.poster_path}`
         return (
-          <MovieCard src={path_img} alt={item.original_title} />
+          <MovieCard key={item.original_title} src={path_img} alt={item.original_title} />
         )
       })}
     </div>
