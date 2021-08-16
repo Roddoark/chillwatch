@@ -4,6 +4,7 @@ import "regenerator-runtime/runtime.js";
 import "./_homepage.scss"
 
 import MovieCard from "~components/MovieCard"
+import ChipMenu from "~components/ChipMenu"
 
 const HomePage = () => {
 
@@ -16,6 +17,8 @@ const HomePage = () => {
   });
 
   return (
+    <>
+    <ChipMenu />
     <div className="list__items">
       {data.results.map(item => {
         let path_img = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${item.poster_path}`
@@ -24,6 +27,7 @@ const HomePage = () => {
         )
       })}
     </div>
+    </>
   )
 }
 
