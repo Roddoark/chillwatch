@@ -4,6 +4,10 @@ const path = require('path');
 
 module.exports = {
   webpackFinal: async (config, { configType }) => {
+    config.resolve.alias['#'] = path.resolve(__dirname, '../src')
+    config.resolve.alias['~components'] = path.resolve(__dirname, '../src/components')
+    config.resolve.alias['~images'] = path.resolve(__dirname, '../assets/images')
+
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.

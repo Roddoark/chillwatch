@@ -1,9 +1,9 @@
 import React from 'react';
-import "./_header.scss";
-import img from '../../../assets/images/logo.png'
+import "./header.scss";
+import img from '~images/logo.png'
 
-import Navigation from '../Navigation'
-import Searchbar from '../Searchbar'
+import Navigation from '~components/Navigation'
+import Searchbar from '~components/Searchbar'
 
 const Header = () => {
   return (
