@@ -4,7 +4,8 @@ import "regenerator-runtime/runtime.js";
 import "./_homepage.scss"
 
 import MovieCard from "~components/MovieCard"
-import ChipMenu from "~components/ChipMenu"
+
+import Filter from '~components/Filter'
 
 const HomePage = () => {
 
@@ -16,9 +17,15 @@ const HomePage = () => {
     setData(result.data);
   });
 
+  const [toggle, setToggle] = React.useState(false);
+ 
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <>
-    <ChipMenu />
+    <Filter toggle={toggle} onToggle={handleToggle} label="Genre"/>
     <div className="list__items">
       {data.results.map(item => {
         let path_img = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${item.poster_path}`

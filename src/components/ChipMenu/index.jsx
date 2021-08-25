@@ -4,11 +4,11 @@ import "./chipMenu.scss";
 import ChipButton from '~components/ChipButton'
 import Popover from "~components/Popover"
 
-const ChipMenu = () => {
+const ChipMenu = ({ toggle, onToggle }) => {
   return (
     <div>
-        <ChipButton label="de"/>
-        <Popover />
+        <ChipButton onClick={onToggle} label="de"/>
+        {toggle && <Popover />}
     </div>
   )
 }
