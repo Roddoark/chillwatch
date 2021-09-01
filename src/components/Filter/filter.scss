@@ -1,7 +1,15 @@
 .filterButton {
     color: #ccc;
-    background-color: transparent;
-    border: 0;
-    font-weight: 500;
     cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color .1s linear;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
