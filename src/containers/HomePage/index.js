@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-
 import axios from 'axios';
 import "regenerator-runtime/runtime.js";
 import "./_homepage.scss"
@@ -27,15 +26,15 @@ const HomePage = () => {
 
   return (
     <>
-          <nav>
-        <Link to="/moviePage">MoviePage</Link>
-      </nav>
     <Filter toggle={toggle} onToggle={handleToggle} label="Genre"/>
     <div className="list__items">
       {data.results.map(item => {
         let path_img = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${item.poster_path}`
         return (
-          <MovieCard key={item.original_title} src={path_img} alt={item.original_title} />
+          <>
+          <p>ID du film : {item.id}</p>
+          <Link key={item.id} to={`/movie/${item.id}`}><MovieCard key={item.original_title} src={path_img} alt={item.original_title} /></Link>
+          </>
         )
       })}
     </div>
