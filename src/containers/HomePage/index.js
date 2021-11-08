@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
+
 import axios from 'axios';
 import "regenerator-runtime/runtime.js";
 import "./_homepage.scss"
@@ -18,13 +20,16 @@ const HomePage = () => {
   });
 
   const [toggle, setToggle] = React.useState(false);
- 
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
   return (
     <>
+          <nav>
+        <Link to="/moviePage">MoviePage</Link>
+      </nav>
     <Filter toggle={toggle} onToggle={handleToggle} label="Genre"/>
     <div className="list__items">
       {data.results.map(item => {
